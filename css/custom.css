@@ -1,0 +1,21 @@
+/* 🔥 强制显示动态背景（绕开主题配置，100%生效） */
+body {
+  background: url("/img/bg.gif") no-repeat center center fixed !important;
+  background-size: cover !important;
+  /* 背景透明度，0-1，数值越小越透明，0.9不遮挡内容 */
+  opacity: 0.9 !important;
+}
+
+/* 🔥 强制显示侧边栏头像（圆形+居中） */
+#aside-content .card-widget.card-info .avatar-img {
+  background: url("/img/avatar.jpg") center center no-repeat !important;
+  background-size: cover !important;
+  border-radius: 50% !important;
+  width: 120px !important;
+  height: 120px !important;
+}
+
+/* 🔥 移除主题默认背景遮罩，让动态背景完全显示 */
+#body-wrap {
+  background: transparent !important;
+}
